@@ -151,6 +151,11 @@ a {
     font-weight: bold;
 }
 
+#name-error, #email-error, #message-error {
+    font-size: 14px;
+    color: #d43f22;
+}
+
 @media (max-width: 1510px) {
     .box {
         width: 40%;
