@@ -1,13 +1,14 @@
 html,body {
     padding:0;
-     margin:0;
-     font-family: 'Raleway', sans-serif;
+    margin:0;
+    font-family: 'Raleway', sans-serif;
     }
 
 .main-header{
-    background-color: #fff;
+    background-color: #161616;
     padding: 20px;
     margin-right: 0px;
+    color: #fff;
     
 
 }
@@ -29,23 +30,21 @@ h1, p {
     font-size: 30px;
     margin-right: 20px;
     border-bottom: none;
-    color: black;
+    color: #fff;
 }
 
 a > .fa-linkedin-in :hover {
     color: gray;
 }
 
-#nav-bar {
-   
-}
+
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #161616;
 }
 
 li {
@@ -77,7 +76,7 @@ a {
 
 
 
-#about, #projects {
+#about, #projects  {
     margin: 5% 10%;
 }
 
@@ -96,6 +95,7 @@ a {
       flex-direction: row;
       justify-content: space-around;
       flex-flow: wrap;
+      
      
   }
 
@@ -103,13 +103,12 @@ a {
 
   .box {
       width: 30%;
-      height: 400px;
       margin: 20px;
       padding: 20px;
       box-sizing: border-box;
-      background-color: linear-gradient(red, yellow);
-      box-shadow:5px 10px 10px 10px #888888;
-      border-radius: 10px;
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      overflow: hidden;
       
   } 
 
@@ -117,18 +116,52 @@ a {
       margin-bottom: 10px;
   }
 
+  
+
+  #contact {
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      color: #fff;
+      margin: 10px auto;
+      background-color: #111;
+     
+  }
+
+
+
+  form textarea, form button, form input, form label {
+    display: block; 
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+.button {
+    background-color:#fff;
+    width: 296px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: #b1b3b4;
+    font-weight: bold;
+}
 
 @media (max-width: 1510px) {
     .box {
         width: 40%;
-        height: 450px;
+        
     }
 }
 
 @media (max-width: 1250px) {
     .box {
         width: 40%;
-        height: 400px;
+        
         
     }
 }
@@ -136,7 +169,7 @@ a {
 @media (max-width: 900px) {
     .box {
         width: 70%;
-        height: 500px;
+        
         
     } 
 }
@@ -151,7 +184,7 @@ a {
 
     .box {
         width: 100%;
-        height: 400px;
+        
     }
 }
 
@@ -169,9 +202,7 @@ a {
         margin-right: 10px;
     }
 
-    .box {
-        height: 300px;
-    }
+   
 
 
 
