@@ -114,8 +114,24 @@ a {
 
   .box img {
       margin-bottom: 10px;
+      size: 120%;
   }
 
+  .box:hover {
+    border: 2px solid #d9d9d9;
+  }
+
+
+ .fa-arrow-circle-right {
+     float: right;
+     color: gray;
+     font-size: 25px;
+     
+ }
+
+
+
+  
   
 
   #contact {
