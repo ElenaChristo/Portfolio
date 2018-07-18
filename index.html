@@ -26,14 +26,13 @@
     </header>
     <nav id="nav-bar">
         <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>            
         </ul>
     </nav>
     <!--<div class="jumbo-pic" title="coding image"></div>-->
-    <div= id="picture"><img src="img/coding.jpg"></div>
+    <div= id="picture"><img src="img/coding.jpg" alt="image of code"></div>
     <div id="about">
         <h2>About</h2>
         <p>I am an aspiring Front End Developer based in London. Through both a PG Cert in Web Development at the University of Sussex, and online learning, I have developed skills in HTML, CSS, JavaScript, JQuery, and Bootstrap. 
@@ -60,22 +59,28 @@
         </div>
     </div>
     <div id="contact">
-        <h2>Contact Me</h2>
-        <p>If you would like to send me an email fill in the contact form below.</p>
-        <form class="contact-form" action="http://formspree.io/elena.c@live.co.uk" method="POST">
-            <input type="hidden" name="_next" value="https://elenachristo.github.io/portfolio/" />
-            <label>Your name:</label>
-            </label><input type="text" name="name" id="name" placeholder="Full Name" value size="40" minlength="1" required>
-           
-            <label>Email:</label>
-            <input type="text" name="email" id="email" placeholder="Your email" value size="40" minlength="1" required>
+        <div id="contact-box">
+            <h2>Contact Me</h2>
+            <p>If you would like to send me an email fill in the contact form below.</p>
+            <form class="contact-form" action="http://formspree.io/elena.c@live.co.uk" method="POST">
+                <input type="hidden" name="_next" value="https://elenachristo.github.io/portfolio/" />
+                <label>Your name:</label>
+                </label><input type="text" name="name" id="name" placeholder="Full Name" value size="40" minlength="1" required>
             
-            <label>Message:</label>
-            <textarea name="message" id="message" placeholder="Message" cols="38" rows="10" minlength="1" required></textarea>
-            
-            <button class="button" type="submit" name="submit" id="submitButton">Send</button>
-        </form>
+                <label>Email:</label>
+                <input type="text" name="email" id="email" placeholder="Your email" value size="40" minlength="1" required>
+                
+                <label>Message:</label>
+                <textarea name="message" id="message" placeholder="Message" cols="38" rows="10" minlength="1" required></textarea>
+                
+                <button class="button" type="submit" name="submit" id="submitButton">Send</button>
+            </form>
+        </div>
     </div>
+    <footer>
+           <p id="copyright">&copy;Elena Christodoulou, 2018</p>
+           
+    </footer>
 
        
         

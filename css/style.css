@@ -60,9 +60,20 @@ li a {
     margin-right: 20px;
 }
 
-li a:hover {
-    background-color: #111;
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
 }
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
 
 a {
     text-decoration: none;
@@ -125,19 +136,16 @@ a {
  .fa-arrow-circle-right {
      float: right;
      color: gray;
-     font-size: 25px;
+     font-size: 20px;
      
  }
 
 
-
-  
-  
-
   #contact {
-      text-align: center;
-      padding-top: 15px;
-      padding-bottom: 20px;
+     text-align: center;
+     align-content: center;
+      padding-top: 40px;
+      padding-bottom: 50px;
       color: #fff;
       margin: 10px auto;
       background-color: #111;
@@ -147,13 +155,14 @@ a {
 
 
   form textarea, form button, form input, form label {
-    display: block; 
-    align-content: center;
+   display: block; 
+   align-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 10px; 
   }
 
+  
 .button {
     background-color:#fff;
     width: 296px;
@@ -171,6 +180,16 @@ a {
     font-size: 14px;
     color: #d43f22;
 }
+
+footer {
+    padding: 20px;
+}
+
+#alignleft {
+    float: left;
+}
+
+
 
 @media (max-width: 1510px) {
     .box {
