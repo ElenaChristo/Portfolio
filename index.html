@@ -64,13 +64,13 @@
             <p>If you would like to send me an email fill in the contact form below.</p>
             <form class="contact-form" action="http://formspree.io/elena.c@live.co.uk" method="POST">
                 <input type="hidden" name="_next" value="https://elenachristo.github.io/portfolio/" />
-                <label>Your name:</label>
+                <label for="name">Your name:</label>
                 </label><input type="text" name="name" id="name" placeholder="Full Name" value size="40" minlength="1" required>
             
-                <label>Email:</label>
+                <label for="email">Email:</label>
                 <input type="text" name="email" id="email" placeholder="Your email" value size="40" minlength="1" required>
                 
-                <label>Message:</label>
+                <label for="message">Message:</label>
                 <textarea name="message" id="message" placeholder="Message" cols="38" rows="10" minlength="1" required></textarea>
                 
                 <button class="button" type="submit" name="submit" id="submitButton">Send</button>
