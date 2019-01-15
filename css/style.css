@@ -346,6 +346,10 @@ footer {
         width: 100%;
         
     }
+
+    .modal-image {
+        float: none;
+    }
 }
 
 @media (max-width: 358px) {
