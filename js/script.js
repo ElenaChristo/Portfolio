@@ -5,6 +5,7 @@ $(document).ready(() => {
     $('#second-box').hide();
     $('#first-box').hide();
     $('#third-box').hide();
+    $('#forth-box').hide();
 
     $('#box1').on('mouseenter', () => {
         $('#first-box').show("slow");
@@ -22,6 +23,12 @@ $(document).ready(() => {
         $('#third-box').show('slow');
     }).on('mouseleave', () => {
         $('#third-box').hide('slow');
+    });
+
+    $('#box4').on('mouseenter', () => {
+        $('#forth-box').show('slow');
+    }).on('mouseleave', () => {
+        $('#forth-box').hide('slow');
     });
 
 
@@ -47,6 +54,10 @@ btn[1].onclick = function() {
 btn[2].onclick = function() {
     modal[2].style.display = "block";
 }
+
+btn[3].onclick = function() {
+    modal[3].style.display = "block";
+}
 // When the user clicks on <span> (x), close the modal
 span[0].onclick = function() {
     modal[0].style.display = "none";
@@ -58,6 +69,10 @@ span[1].onclick = function() {
 
 span[2].onclick = function() {
     modal[2].style.display = "none";
+}
+
+span[3].onclick = function() {
+    modal[3].style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
